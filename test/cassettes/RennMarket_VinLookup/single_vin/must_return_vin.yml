@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://vpic.nhtsa.dot.gov/api/vehicles/GetModelsForMakeId/440?format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '1169'
+      Ssl-Tls:
+      - TLSv1.2
+      Date:
+      - Mon, 20 Apr 2020 02:26:07 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains ; preload
+    body:
+      encoding: UTF-8
+      string: '{"Count":13,"Message":"Response returned successfully","SearchCriteria":"Make:440","Results":[{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":1684,"Model_Name":"V8 Vantage"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":1686,"Model_Name":"DBS"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":1687,"Model_Name":"DB9"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":1688,"Model_Name":"Rapide"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":1695,"Model_Name":"V12 Vantage"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":1697,"Model_Name":"Virage"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":1701,"Model_Name":"Vanquish"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":13751,"Model_Name":"DB11"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":14157,"Model_Name":"Lagonda"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":14162,"Model_Name":"Vantiage"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":14164,"Model_Name":"V8"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":19609,"Model_Name":"Vanquish S"},{"Make_ID":440,"Make_Name":"Aston
+        Martin","Model_ID":19610,"Model_Name":"Vanquish Zagato"}]}'
+    http_version: null
+  recorded_at: Mon, 20 Apr 2020 02:26:07 GMT
+recorded_with: VCR 5.1.0
