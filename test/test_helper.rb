@@ -13,6 +13,12 @@ require "minitest/given"
 require "faraday"
 require "byebug"
 
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'test/cassettes'
+  c.hook_into :webmock
+end
+MinitestVcr::Spec.configure!
 # Consider setting MT_NO_EXPECTATIONS to not add expectations to Object.
 # ENV["MT_NO_EXPECTATIONS"] = true
 
