@@ -34,7 +34,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "handsome_fencer-test"
   spec.add_development_dependency "shoulda-context", "2.0.0.rc2"
   spec.add_development_dependency "shoulda-matchers", '~> 4.0'
-  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "minitest-vcr"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "faraday"
+  spec.add_development_dependency "mocha"
   spec.add_development_dependency "byebug"
 
 end

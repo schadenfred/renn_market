@@ -70,6 +70,8 @@ GEM
     byebug (11.1.2)
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     crass (1.0.6)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -77,6 +79,8 @@ GEM
     erubi (1.9.0)
     erubis (2.7.0)
     eventmachine (1.2.7)
+    faraday (1.0.1)
+      multipart-post (>= 1.2, < 3)
     ffi (1.12.2)
     formatador (0.2.5)
     given_core (3.8.0)
@@ -122,6 +126,7 @@ GEM
       shoulda
       shoulda-matchers
       thor
+    hashdiff (1.0.1)
     html2haml (2.2.0)
       erubis (~> 2.7.0)
       haml (>= 4.0, < 6)
@@ -147,6 +152,8 @@ GEM
     mimemagic (0.3.4)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
+    minispec-metadata (2.0.0)
+      minitest
     minitest (5.14.0)
     minitest-given (3.8.0)
       given_core (= 3.8.0)
@@ -156,7 +163,13 @@ GEM
     minitest-rails (6.0.1)
       minitest (~> 5.10)
       railties (~> 6.0.0)
+    minitest-vcr (1.4.0)
+      minispec-metadata (~> 2.0)
+      minitest (>= 4.7.5)
+      vcr (>= 2.9)
+    mocha (1.11.2)
     multi_json (1.14.1)
+    multipart-post (2.1.1)
     nenv (0.3.0)
     nio4r (2.5.2)
     nokogiri (1.10.9)
@@ -206,6 +219,7 @@ GEM
       ffi (~> 1.0)
     ruby_parser (3.14.2)
       sexp_processor (~> 4.9)
+    safe_yaml (1.0.5)
     sexp_processor (4.14.1)
     shellany (0.0.1)
     shoulda (2.11.3)
@@ -226,7 +240,11 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
-    vcr (5.0.0)
+    vcr (5.1.0)
+    webmock (3.8.3)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
@@ -237,12 +255,15 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  faraday
   handsome_fencer-test
+  minitest-vcr
+  mocha
   pg
   renn_market!
   shoulda-context (= 2.0.0.rc2)
   shoulda-matchers (~> 4.0)
-  vcr
+  webmock
 
 BUNDLED WITH
    1.17.3
