@@ -19,6 +19,7 @@ load 'rails/tasks/engine.rake'
 
 load 'rails/tasks/statistics.rake'
 load 'lib/tasks/vin_lookup.rake'
+load 'lib/tasks/scrape_platforms.rake'
 
 require 'bundler/gem_tasks'
 

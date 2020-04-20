@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  make: MyString
+  model: MyString
+  year: MyString
+  seller_type: 1
+  lede: MyString
+  date_posted: MyString
+  price: 1
+  condition: MyString
+  odometer: MyString
+  drive: MyString
+  exterior_color: MyString
+  interior_color: MyString
+  title_status: MyString
+  transmission: MyString
+  body: MyString
+  trim: MyString
+  vin: MyString
+  vehicle_id: MyString
+
+two:
+  make: MyString
+  model: MyString
+  year: MyString
+  seller_type: 1
+  lede: MyString
+  date_posted: MyString
+  price: 1
+  condition: MyString
+  odometer: MyString
+  drive: MyString
+  exterior_color: MyString
+  interior_color: MyString
+  title_status: MyString
+  transmission: MyString
+  body: MyString
+  trim: MyString
+  vin: MyString
+  vehicle_id: MyString

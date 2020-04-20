@@ -6,6 +6,11 @@ require "rails/test_help"
 require "minitest/rails"
 require "minitest/given"
 require "support/shoulda"
+require 'minitest-vcr'
+require "webmock"
+require "mocha/minitest"
+require "minitest/given"
+require "faraday"
 require "byebug"
 
 # Consider setting MT_NO_EXPECTATIONS to not add expectations to Object.

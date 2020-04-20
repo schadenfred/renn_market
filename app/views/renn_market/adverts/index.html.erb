@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Adverts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Year</th>
+      <th>Seller type</th>
+      <th>Lede</th>
+      <th>Date posted</th>
+      <th>Price</th>
+      <th>Condition</th>
+      <th>Odometer</th>
+      <th>Drive</th>
+      <th>Exterior color</th>
+      <th>Interior color</th>
+      <th>Title status</th>
+      <th>Transmission</th>
+      <th>Body</th>
+      <th>Trim</th>
+      <th>Vin</th>
+      <th>Vehicle</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @adverts.each do |advert| %>
+      <tr>
+        <td><%= advert.make %></td>
+        <td><%= advert.model %></td>
+        <td><%= advert.year %></td>
+        <td><%= advert.seller_type %></td>
+        <td><%= advert.lede %></td>
+        <td><%= advert.date_posted %></td>
+        <td><%= advert.price %></td>
+        <td><%= advert.condition %></td>
+        <td><%= advert.odometer %></td>
+        <td><%= advert.drive %></td>
+        <td><%= advert.exterior_color %></td>
+        <td><%= advert.interior_color %></td>
+        <td><%= advert.title_status %></td>
+        <td><%= advert.transmission %></td>
+        <td><%= advert.body %></td>
+        <td><%= advert.trim %></td>
+        <td><%= advert.vin %></td>
+        <td><%= advert.vehicle_id %></td>
+        <td><%= link_to 'Show', advert %></td>
+        <td><%= link_to 'Edit', edit_advert_path(advert) %></td>
+        <td><%= link_to 'Destroy', advert, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Advert', new_advert_path %>
